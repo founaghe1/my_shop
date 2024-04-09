@@ -1,0 +1,14 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input  type='text' name='nom' placeholder="Nom"/>
+    <input type="float" name="prix" placeholder="prix" />
+    <input type="number" name="quantite" placeholder="Quantité" />
+    <textarea name='description' placeholder="Description" > </textarea>
+    <select multiple size=5 name='category_modif'>
+        {% for c in categories%}
+            <option value={{c.id}}>{{c.name}}</option>
+        {% endfor %}
+    </select>
+    <input type="file" name="image">
+    <button type="submit">Enregistrer</button>
+</form>

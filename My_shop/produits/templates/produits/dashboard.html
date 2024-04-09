@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <script src="{% static 'recherche.js' %}"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Tableau de bord des produits</h1>
+    <form method="post" action="{% url 'dashboard' %}">
+        {% csrf_token %}
+        <select name="category_modif">
+            <option value="">Sélectionnez une catégorie</option>
+            {% for category in categories %}
+                <option value="{{ category.id }}">{{ category.nom }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Rechercher</button>
+    </form>
+
+    <div class="container">
+        {% for produit in produits %}
+            <div class="card">
+                <div class="img">
+                    <img src="{{ produit.image.url }}" alt="{{ produit.nom }}">
+                </div>
+                <div class="element">
+                    <h3>{{ produit.nom }}</h3>
+                    <p>Prix: {{ produit.prix }}</p>
+                </div>
+                <button class="btn">Shop me</button>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
