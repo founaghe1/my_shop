@@ -5,6 +5,7 @@ import sys
 
 
 def main():
+    sys.path.append('/My_shop/My_shop')
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'My_shop.settings')
     try:

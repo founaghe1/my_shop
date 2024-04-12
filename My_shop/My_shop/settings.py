@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+
 import os
 from pathlib import Path
 
@@ -26,8 +27,11 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', "False").lower() == "true"
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(' ')
+# ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(' ')
+allowed_hosts = os.environ.get("ALLOWED_HOSTS")
+ALLOWED_HOSTS = allowed_hosts.split(' ') if allowed_hosts else []
 
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 # Application definition
 
