@@ -1,7 +1,7 @@
 from django.urls  import path
 from .views import ListeProduitsCreer, ProduitUpdateDelete, UserCreateAPIView, UserDelete_Update, CategoryCreateAPIView, CategorieDelete_Update, dashboard, login_view, search_by_category, ProduitsParCategorie
 # from rest_framework.authtoken.views import obtain_auth_token
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 
 urlpatterns = [
@@ -19,5 +19,5 @@ urlpatterns = [
     path('produits-par-categorie/<int:categorie_id>/', ProduitsParCategorie.as_view(), name='produits_par_categorie'),
 ]
 
-urlpatterns += staticfiles_urlpatterns()
+
 
