@@ -91,7 +91,7 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'My_shop',
+        'NAME': 'my_shop',
 
         'USER': 'postgres',
 
@@ -100,7 +100,7 @@ DATABASES = {
         'HOST': 'localhost',
         # 'HOST': 'db',
 
-        'PORT': '5000',
+        'PORT': '5234',
         'TEST': {
             'NAME': 'myShop_test',
         },
