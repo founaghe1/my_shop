@@ -32,7 +32,7 @@ DEBUG = os.environ.get('DEBUG', "False").lower() == "true"
 allowed_hosts = os.environ.get("ALLOWED_HOSTS")
 ALLOWED_HOSTS = allowed_hosts.split(' ') if allowed_hosts else []
 
-ALLOWED_HOSTS = ['my-shop-snpy.onrender.com']
+ALLOWED_HOSTS = ['localhost:5000', '127.0.0.1:5000', 'my-shop-snpy.onrender.com']
 
 
 # Application definition
