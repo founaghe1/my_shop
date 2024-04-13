@@ -32,7 +32,7 @@ DEBUG = os.environ.get('DEBUG', "False").lower() == "true"
 allowed_hosts = os.environ.get("ALLOWED_HOSTS")
 ALLOWED_HOSTS = allowed_hosts.split(' ') if allowed_hosts else []
 
-ALLOWED_HOSTS = ['localhost', 'my-shop-snpy.onrender.com']
+ALLOWED_HOSTS = ['dpg-coamv18l6cac73enkcjg-a', 'my-shop-snpy.onrender.com']
 
 
 # Application definition
@@ -97,7 +97,7 @@ DATABASES = {
 
         'PASSWORD': 'jata0BV8KXINrkbdpJ4f5whcP6046x8F',
 
-        'HOST': 'localhost',
+        'HOST': 'dpg-coamv18l6cac73enkcjg-a',
         # 'HOST': 'db',
 
         'PORT': '5432',
