@@ -100,7 +100,7 @@ DATABASES = {
         'HOST': 'localhost',
         # 'HOST': 'db',
 
-        'PORT': '5234',
+        'PORT': '5432',
         'TEST': {
             'NAME': 'myShop_test',
         },
