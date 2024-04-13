@@ -93,9 +93,9 @@ DATABASES = {
 
         'NAME': 'my_shop',
 
-        'USER': 'postgres',
+        'USER': 'founaghe',
 
-        'PASSWORD': 'founaghe',
+        'PASSWORD': 'jata0BV8KXINrkbdpJ4f5whcP6046x8F',
 
         'HOST': 'localhost',
         # 'HOST': 'db',
