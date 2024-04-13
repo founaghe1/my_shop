@@ -97,13 +97,13 @@ DATABASES = {
 
         'PASSWORD': 'jata0BV8KXINrkbdpJ4f5whcP6046x8F',
 
-        'HOST': 'dpg-coamv18l6cac73enkcjg-a',
+        'HOST': 'dpg-coamv18l6cac73enkcjg-a.oregon-postgres.render.com',
         # 'HOST': 'db',
 
         'PORT': '5432',
-        'TEST': {
-            'NAME': 'myShop_test',
-        },
+        # 'TEST': {
+        #     'NAME': 'myShop_test',
+        # },
     }
 }
 
